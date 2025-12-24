@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="paper-texture"></div> 
+    <div id="mailbox-container">
+    
+        <div class="postbox">
+            <div class="postbox-top">
+                <div class="icon-envelope">
+                    <div class="flap-line-1"></div>
+                    <div class="flap-line-2"></div>
+                </div>
+            </div>
+
+            <div class="slot-area">
+                <div class="slot-shadow"></div>
+                <div class="envelope-wrapper">
+                    <div class="envelope-flap"></div>
+                    <input type="text" id="passcode" placeholder="寫上你的名字...">
+                </div>
+            </div>
+
+            <div class="post-text">POST</div>
+
+            <div class="door-frame">
+                <div class="door-inner">
+                    <div class="rivet r-tl"></div>
+                    <div class="rivet r-tr"></div>
+                    <div class="rivet r-bl"></div>
+                    <div class="rivet r-br"></div>
+                    
+                    <div class="keyhole"></div>
+
+                    <button id="login-btn">PULL</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="error-msg">查無此人 請確認輸入是否正確</div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="script.js"></script>
+</body>
