@@ -99,6 +99,8 @@ function checkPass() {
 
 // postcard
 function init3D(messageText, receiverName, address) {
+    document.body.style.backgroundColor = red; 
+    document.body.style.margin = '0';
     // scene
     const scene = new THREE.Scene();
     scene.background = new THREE.Color(0xba1f1f);
@@ -312,5 +314,3 @@ if (address) {
 
     return texture;
 }
-
-
