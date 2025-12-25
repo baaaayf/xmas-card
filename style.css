@@ -236,3 +236,8 @@ button:active {
         transform: rotate(-2deg) scale(1.15);
     }
 }
+canvas {
+    display: block; /* 消除底部的預設縫隙 */
+    width: 100%;
+    height: 100%;
+}
