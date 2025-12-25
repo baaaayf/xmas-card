@@ -281,7 +281,7 @@ if (address) {
     const stampImg = new Image();
     
     const randomNum = Math.floor(Math.random() * 3) + 1; 
-    stampImg.src = `stamp${randomNum}.PNG`; 
+    stampImg.src = `stamp${randomNum}.png`; 
     stampImg.onload = function() {
         const stampX = canvas.width - 300;
         const stampY = 40;
@@ -312,4 +312,5 @@ if (address) {
 
     return texture;
 }
+
 
