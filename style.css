@@ -211,3 +211,28 @@ button:active {
     transform: translate(-50%, -50%) rotate(8deg);
     pointer-events: none; 
 }
+/* scaling */
+@media screen and (max-width: 768px) {
+    
+    #mailbox-container {
+        transform: rotate(-2deg) scale(1.25);
+    }
+    input {
+        font-size: 16px; 
+    }
+    input::placeholder {
+        font-size: 16px;
+    }
+    #error-msg {
+        font-size: 14px;
+        left: 50%;   
+        top: 85%;  
+        transform: translate(-50%, 0) rotate(0deg);
+        width: max-content;
+    }
+}
+@media screen and (max-width: 380px) {
+    #mailbox-container {
+        transform: rotate(-2deg) scale(1.15);
+    }
+}
