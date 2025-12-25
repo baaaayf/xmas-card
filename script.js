@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // check password
 function checkPass() {
     const inputPass = document.getElementById('passcode').value.toUpperCase().trim();
-    const keyName = inputPass.toLowerCase(); // 用小寫當 key
+    const keyName = inputPass.toLowerCase();
     
     const errorMsg = document.getElementById('error-msg');
     const container = document.getElementById('mailbox-container'); 
